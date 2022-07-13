@@ -85,4 +85,6 @@ dependencies {
     testImplementation "org.mockito:mockito-inline:$mockitoVersion"
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    testImplementation 'android.arch.core:common:1.1.1'
+    testImplementation 'android.arch.core:core-testing:1.1.1'
 }

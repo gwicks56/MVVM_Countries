@@ -11,6 +11,12 @@ import io.reactivex.observers.DisposableSingleObserver
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
+/**
+ * No Android views here to enable easier testing
+ * Seperated viewModel from model using DI
+ *
+ */
+
 class ListViewModel: ViewModel() {
 
     @Inject
