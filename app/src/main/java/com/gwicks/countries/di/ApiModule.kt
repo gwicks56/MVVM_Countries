@@ -1,6 +1,7 @@
 package com.gwicks.countries.di
 
 import com.gwicks.countries.model.CountriesAPI
+import com.gwicks.countries.model.CountriesService
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
@@ -20,6 +21,11 @@ class ApiModule {
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create()) //coverts Country into an observer
             .build()
             .create(CountriesAPI::class.java)
+    }
+
+    @Provides
+    fun provideCountriesService(): CountriesService{
+        return CountriesService()
     }
 
 }
